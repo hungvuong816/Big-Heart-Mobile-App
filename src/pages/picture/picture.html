@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar color ="primary">
+        <ion-title>
+      Picture
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <br>
+
+  <h3>Please take a photo of your item or upload from your photo library</h3>
+
+  <br>
+
+
+
+<button ion-button full color = "primary" (click) = "takePhoto()" >Take Photo</button>
+<button ion-button full color = "secondary" (click) = "getPhoto()" >Upload From Library</button>
+<button ion-button full color = "danger" (click) = "cropPhoto()" >Crop Photo</button>
+
+<img src = "{{this.dataService.photo_temp}}"/>
+
+<br>
+<br>
+<h3>Post Title</h3>
+<ion-input id = "my_text" type = "text" placeholder ="Please Enter Item Description" [(ngModel)]="this.dataService.desp_temp"></ion-input>
+<br>
+
+<button ion-button full color = "Primary" (click) ="photoObject()">Create Post</button> 
+
+
+
+
+<br>
+
+
+
+

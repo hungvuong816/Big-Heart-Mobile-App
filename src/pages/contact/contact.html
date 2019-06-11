@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color ="primary">
+    <ion-title>About</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <h2 style = "margin-left: 20px">Welcome to Big Heart App!</h2>
+  <br>
+  <p>
+    My name is Hung Vuong, i am the developer of this mobile. I hope this app will help each of us to contribute to share and donate our necessary items across the community. 
+  </p>
+  <p>
+    Please reach out to me if you have any questions or concerns.
+  </p>
+  <br>
+  <ion-row class ="row">
+    <ion-col>
+        <button ion-button icon-left color = "primary" (click)= "sendSMS()">
+            <ion-icon name = "text"></ion-icon>
+        </button>
+    </ion-col>
+
+    <ion-col>
+        <button ion-button icon-left color = "secondary" (click)= "sendEmail()">
+            <ion-icon name = "mail"></ion-icon>
+        </button>
+    </ion-col>
+        
+    <ion-col>
+        <a ion-button icon-left color = "dark" href="https://github.com/hungvuong816"><ion-icon name="logo-github"></ion-icon></a>
+    </ion-col>
+  </ion-row>
+
+
+
+</ion-content>
